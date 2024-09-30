@@ -1,3 +1,5 @@
+# Orders and Tip calculator
+
 Project done by Carlos Cruz in order to practice more React. The basic and key features implemented on this little project:
 -It is done of course in React, with Vite to configure the environment easily.
 -For the CSS, I've used Tailwind in order to also practice it.
