@@ -1,5 +1,7 @@
 # Orders and Tip Calculator
 
+Demo of the project: https://66faf2bdfc37710e14b57d6e--frabjous-crisp-98fe1f.netlify.app/
+
 Project done by Carlos Cruz in order to practice more React. The basic and key features implemented in this little project:
 
 - It is done, of course, in React, with **Vite** to configure the environment easily.
