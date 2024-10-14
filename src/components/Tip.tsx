@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react"
+import { OrderActions } from "../reducers/order-reducer"
 
 const tipOptions = [
     {
@@ -20,9 +20,9 @@ const tipOptions = [
 
 type TipProps = {
     tip: number,
-    setTip: Dispatch<SetStateAction<number>>
+    dispatch:  React.Dispatch<OrderActions>
 }
-function Tip({tip,setTip}: TipProps){
+function Tip({tip,dispatch}: TipProps){
     return(
         <div className="mb-4">
             <h2 className="text-4xl mb-5 font-bold">Tip</h2>
@@ -34,7 +34,7 @@ function Tip({tip,setTip}: TipProps){
                             type="radio"
                             name="tip" 
                             value={tipOption.value} 
-                            onChange={(e) => setTip(+e.target.value)}
+                            onChange={(e) => dispatch({type: 'ADD_TIP', payload: {value: +e.target.value}})}
                             checked={tip === tipOption.value}/>
                         <label htmlFor={tipOption.id}>{tipOption.label}</label>
                     </div>
